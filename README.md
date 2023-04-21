@@ -24,7 +24,7 @@ Maven 4.0.0<br />
 Method Type Get<br />
 Route :http://localhost:8080/schedule<br />
 Success Response:<br />
-```
+```json
 [
     {
         "id": 1,
@@ -49,7 +49,7 @@ Method Type:Get<br />
 Route:http://localhost:8080/schedule/{line}<br />
 Eg: http://localhost:8080/schedule/Barrie<br />
 Success Response:<br />
-```
+```json
 [
     {
         "id": 6,
@@ -77,7 +77,7 @@ Method Type:Get<br />
 Route:http://localhost:8080/schedule/{line}/{time}<br />
 Eg: http://localhost:8080/schedule/Barrie/7:30am<br />
 Response:<br />
-```
+```json
 [
     {
         "id": 6,
@@ -87,7 +87,6 @@ Response:<br />
     }
 ]
 ```
-</br>
 Error: If there is no train at specified line or line and time<br />
 Response: 404 Not Found<br />
 <br />
@@ -100,5 +99,3 @@ Note: Valid time formats include 12 & 24 hour in formats<br />
 2)Error handling scenarios to handle bad requests<br />
 3)Web security to prevent unauthorized requests<br />
 4)OpenAPI to check on train status and include trains from other stations<br />
-
- 
