@@ -24,7 +24,7 @@ Maven 4.0.0<br />
 Method Type Get<br />
 Route :http://localhost:8080/schedule<br />
 Success Response:<br />
-```
+```html
 [
     {
         "id": 1,
@@ -48,7 +48,7 @@ Method Type:Get<br />
 Route:http://localhost:8080/schedule/{line}<br />
 Eg: http://localhost:8080/schedule/Barrie<br />
 Response:<br />
-```[
+```html[
     {
         "id": 6,
         "line": "Barrie",
@@ -74,7 +74,7 @@ Method Type:Get<br />
 Route:http://localhost:8080/schedule/{line}/{time}<br />
 Eg: http://localhost:8080/schedule/Barrie/7:30am<br />
 Response:<br />
-```[
+```html[
     {
         "id": 6,
         "line": "Barrie",
