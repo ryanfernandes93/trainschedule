@@ -24,7 +24,7 @@ Maven 4.0.0<br />
 Method Type Get<br />
 Route :http://localhost:8080/schedule<br />
 Success Response:<br />
-```html
+```
 [
     {
         "id": 1,
@@ -41,14 +41,16 @@ Success Response:<br />
     .
 	.
 	.
-]```
+]
+```
 </br>
 2)Get trains on a specific line<br />
 Method Type:Get<br />
 Route:http://localhost:8080/schedule/{line}<br />
 Eg: http://localhost:8080/schedule/Barrie<br />
-Response:<br />
-```html[
+Success Response:<br />
+```
+[
     {
         "id": 6,
         "line": "Barrie",
@@ -62,10 +64,11 @@ Response:<br />
         "arrival": 1230
     },
     .
-	.
-	.
-]```
-
+    .
+    .
+]
+```
+</br>
 Error: If line entered is not present in database<br />
 Response: 404 Not Found<br />
 </br>
@@ -74,15 +77,17 @@ Method Type:Get<br />
 Route:http://localhost:8080/schedule/{line}/{time}<br />
 Eg: http://localhost:8080/schedule/Barrie/7:30am<br />
 Response:<br />
-```html[
+```
+[
     {
         "id": 6,
         "line": "Barrie",
         "departure": 730,
         "arrival": 930
     }
-]```
-
+]
+```
+</br>
 Error: If there is no train at specified line or line and time<br />
 Response: 404 Not Found<br />
 <br />
